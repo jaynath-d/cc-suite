@@ -1,7 +1,7 @@
 {
   "name": "cc-suite",
-  "version": "1.0.0",
-  "description": "A sample NPM package with TypeScript and Jest",
+  "version": "1.0.1",
+  "description": "Your comprehensive toolkit for secure credit card management, validation, generation, and BIN checking.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
