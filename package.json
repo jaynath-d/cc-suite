@@ -18,7 +18,7 @@
     "cc-suite",
     "cc-checker",
     "cc-generator",
-    "cc-validator",
+    "cc-validator"
   ],
   "repository": {
     "type": "git",
