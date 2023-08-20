@@ -25,6 +25,12 @@ jobs:
         id: coverage
         run: echo "::set-output name=percentage::$(cat ./coverage/lcov-report/index.json | jq -r '.total.branches.pct')"
 
+      - name: Save coverage reports as artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-reports
+          path: ./coverage
+
       - name: Update coverage badge in README
         run: |
           COVERAGE_PERCENTAGE=${{ steps.coverage.outputs.percentage }}
