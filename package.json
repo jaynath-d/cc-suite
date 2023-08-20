@@ -1,6 +1,6 @@
 {
   "name": "cc-suite",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "A sample NPM package with TypeScript and Jest",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
