@@ -1,0 +1,28 @@
+name: Test and Coverage
+
+on: [push]
+
+jobs:
+  test-and-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests and coverage
+        run: npm test -- --coverage
+
+      - name: Copy coverage badge to README
+        run: |
+          COVERAGE_PERCENTAGE=$(node -p "require('./coverage/lcov-report/index.json').total.branches.pct")
+          sed -i "s/\(Coverage: \)[0-9]*\.[0-9]*/\1$COVERAGE_PERCENTAGE/" README.md
+        if: always()
