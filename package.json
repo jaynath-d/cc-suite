@@ -8,8 +8,6 @@
     "test": "jest",
     "build": "tsc"
   },
-  "author": "Your Name",
-  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.5.2",
     "jest": "^27.5.1",
@@ -18,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaynath-d/npm-starter-kit.git"
+    "url": "git://github.com/jaynath-d/cc-suite.git"
   },
   "author": "Jaynath Ray <pcode027@gmail.com>",
   "license": "MIT",
