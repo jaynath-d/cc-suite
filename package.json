@@ -1,6 +1,6 @@
 {
   "name": "cc-suite",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Your comprehensive toolkit for secure credit card management, validation, generation, and BIN checking.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,6 +13,9 @@
     "jest": "^27.5.1",
     "ts-jest": "^27.1.5",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
   },
   "keywords": [
     "cc-suite",
