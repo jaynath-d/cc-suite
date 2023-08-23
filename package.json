@@ -15,7 +15,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "request": "^2.88.2"
+    "node-api-request": "^0.1.0"
   },
   "keywords": [
     "cc-suite",
