@@ -1,4 +1,4 @@
-import { HttpRequestUtility } from "./utils"
+import NodeApiRequest from "node-api-request"
 
 export interface BinlookupOptions {
     key?: string;
@@ -36,7 +36,7 @@ class Binlookup {
         }
 
         try {
-            const response = await HttpRequestUtility.sendRequest({
+            const response = await NodeApiRequest.sendRequest({
                 url: this.config.url + bin,
                 headers: headers
             })
