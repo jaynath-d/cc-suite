@@ -1,6 +1,6 @@
 {
   "name": "cc-suite",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Your comprehensive toolkit for secure credit card management, validation, generation, and BIN checking.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,7 +21,10 @@
     "cc-suite",
     "cc-checker",
     "cc-generator",
-    "cc-validator"
+    "cc-validator",
+    "bin-info",
+    "bin-checker",
+    "bin"
   ],
   "repository": {
     "type": "git",
