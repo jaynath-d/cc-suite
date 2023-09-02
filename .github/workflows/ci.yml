@@ -15,11 +15,16 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install NPM dependencies 📦
-        run: npm install
+      - name: Run tests 🧪
+        uses: gha-actions/test-runner@0.0.4
+        env:
+          LANGUAGE: 'node'
 
-      - name: Unit tests 🧪
-        run: npm test -- --coverage
+      # - name: Install NPM dependencies 📦
+      #   run: npm install
+
+      # - name: Unit tests 🧪
+      #   run: npm test -- --coverage
 
       - name: Get coverage percentage
         id: coverage
