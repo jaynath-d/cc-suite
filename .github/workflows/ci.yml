@@ -16,7 +16,7 @@ jobs:
           node-version: 18
 
       - name: Run tests 🧪
-        uses: gha-actions/test-runner@0.0.2 
+        uses: gha-actions/test-runner@0.0.4
         env:
           LANGUAGE: 'node'
 
